@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+
+<body class="corpo">
+    <div class="oi">
+        <h3>Serviços de rede</h3>
+    </div>
+
+    <div class="osi">
+        <h2> Modelo OSI </h2>
+        <p>OSI é a Interconexão de Sistemas Abertos. É o primeiro modelo padrão de
+            comunicação entre sistemas de computadores e redes, o qual, faz uso de 7 camadas para grantir essa conversa,
+            que, juntas, realizam a comunicação através de uma rede.</p>
+        <img class="img" src="modeloOsi.jpg">
+
+        <div class="div">Física: primeira camada do modelo, na qual são especificados os dispositivos, como hubs e
+            meios de transmissão. Nesse momento, os dados são transmitidos e processados na próxima camada. </p>Funciona
+            como o exemplo dos correios, a camada física seria as estradas, isto é, o caminho pelo qual as encomendas
+            percorrem para chegar ao destino.</div>
+
+        <div class="div">Dados: aqui, os dados são recebidos do meio físico e passam por uma análise que busca
+            identificar erros e corrigi-los. Outra função exercida por essa camada é o controle do fluxo de transmissão
+            dos dados.
+        </div>
+
+        <div class="div">Rede: talvez a mais atuante nas redes, sobretudo na internet, essa é a camada responsável pelo
+            endereçamento do IP de origem e de destino, bem como pela seleção de pacotes que devem ser priorizados para
+            envio. De modo resumido, a função dela é controlar o roteamento entre a origem e o destino dos dados.</div>
+
+        <div class="div">Transporte: se no exemplo dos correios, a primeira camada se assemelha às “estradas”, esta é
+            representada pelos caminhões e carteiros. Isso porque tal seção garante o transporte dos dados, assegurando
+            o sucesso tanto no envio quanto no recebimento.
+
+        </div>
+
+        <div class="div">Sessão: a sua função é estabelecer e finalizar a conexão entre hosts, bem como oferecer suporte
+            às sessões por meio da realização de registros de log e de tarefas de segurança.
+
+        </div>
+
+        <div class="div">Apresentação: nesta etapa, ocorre a tradução dos dados, o que inclui a conversão de códigos
+            para caracteres, sua compactação e, caso necessário, sua criptografia.
+
+        </div>
+
+        <div class="div">Aplicação: a sétima e última camada tem como foco garantir a interação humano-máquina. Por meio
+            dela, é possível enviar e-mails, transferir arquivos, acessar websites, conectar remotamente em outras
+            máquinas, entre outras possibilidades. É aqui que ficam os protocolos mais conhecidos, como HTTP e FTP, além
+            de serviços como o DNS.
+
+        </div>
+    </div>
+
+
+    <div class="tcp">
+        <h2> Modelo TCP/IP</h2>
+        <p> O TCP se refere a algo que faz toda a definição de como aplicações conseguem criar canais de comunicação
+            através da rede, serve para principalmente, viabilizar a troca de informações entre ORIGEM e DESTINO. Também
+            auxilia na quebra em pedaços de uma mensagem que será posteriormente reconstruída antes de chegar a seu
+            destino.</p> Já o IP é o que define o endereço e o caminho do pacote de dados, ou seja, ele garante que as
+        informações cheguem a seu destino correto.</p> Basicamente o “carteiro”, que recebe o item e o checa para
+        ter certeza de que estará no local de seu objetivo.</p>
+
+        <div class="div">Camada Aplicação: camada para definir o uso ou finalidade da transmissão dos protocolos
+            relacionados ao programa. </div>
+
+        <div class="div">Camada Transporte:responsável pela maneira que os dados serão transmitidos pela rede, conforme
+            o uso, prioridade ou criticidade do conteúdo trafegado. </div>
+
+        <div class="div">Camada de Internet: responsável pelo roteamento de origem e destino dos pacotes. Por meio dela,
+            os dispositivos de diversas redes privadas e públicas encontram-se para troca de pacotes e informações
+            solicitadas.</div>
+
+        <div class="div">Camada de Enlace: lida com a transferência em si dos dados entre os hosts. Ou seja, finalizando
+            o paralelo com o serviço postal, trata-se do envio de fato do seu pacote ao destinatário.</div>
+    </div>
+
+
+    <div class="udp">
+        <h2> Protocolo UDP</h2>
+        <p>O User Datagram Protocol (UDP) é um protocolo de Internet mais simples e sem conexão, no qual os serviços de
+            verificação e recuperação de erros não são necessários.</p>
+
+        Com o UDP, não há sobrecarga para abrir, manter ou encerrar uma conexão — os dados são continuamente enviados
+        para o destinatário, quer ele os receba ou não.
+        O remetente não espera para ter certeza de que o destinatário recebeu o pacote. Se o destinatário perder alguns
+        pacotes UDP aqui e ali, o remetente não os reenviará.
+        </p>
+        <img class="img" src="modeloudp.png">
+    </div>
+
+    <div class="uds">
+        <h2> Protocolo DNS</h2>
+        <p>O DNS é um sistema de banco de dados utilizando na internet com o objetivo de traduzir os endereços de IP
+            (Internet Procol) em nomes de sites.</p> Existem duas formas de acessar um site na internet: digitando o
+        nome de domínio que você já está acostumado ou digitando o endereço IP da sua hospedagem. </p>
+        <img class="img" src="dns.png">
+
+    </div>
+
+    <div class="dhcp">
+        <h2> Protocolo DHCP</h2>
+        <p>O protocolo de configuração dinâmica de hosts (DHCP) é um protocolo de rede padronizado e utilizado em redes
+            de protocolo da internet (IP), basicamente gerenciar os endereços IP nas redes.</p> O protocolo de dhcp é
+        controlado por um servidor que distribui dinamicamente o endereço IP e outras informações a cada host na rede
+        para que eles possam se comunicar com eficiência.</p>
+        <img class="img" src="dhcp.png">
+    </div>
+
+    <div class="ftp">
+        <h2> Protocolo FTP</h2>
+        <p>FTP (File Transfer Protocol) é um protocolo de rede para a transmissão de arquivos entre computadores. Dentro
+            do conjunto TCP/IP (Transmission Control Protocol/Internet Protocol), ele é um protocolo da camada de
+            aplicação para o download e upload de arquivos em conexões do tipo cliente/servidor.
+        </p>
+    </div>
+
+    <div class="http">
+        <h2> HTTP/HTTPS</h2>
+        <p>O HTTP (HyperText Transfer Protocol) nada mais é do que o protocolo transferência de hipertexto padrão da
+            internet. Isso quer dizer que é por meio dele que os dados se transferem entre o seu computador/smartphone e
+            os servidores de hipermídia da internet, ou seja, é basicamente uma forma de comunicação.</p>
+
+        <P>O protocolo HTTPS (HyperText Transfer Protocol Secure) é idêntico ao HTTP e surgiu com o intuito de
+            substituí-lo, porém, foi adicionada uma camada do SSL (Secure Sockets Layer) ou de TLS (Transfer Layer
+            Security). Como os próprios nomes e termos já dizem, no HTTPS foram adicionados alguns princípios de
+            segurança, como confidencialidade, integridade e autenticação.</P>
+        <img class="img" src="http.png">
+    </div>
+
+    <div class="web">
+        <h2>WEB SERVER</h2>
+        <p>Um servidor da web (web server) é responsável por hospedar o conteúdo do seu site, ou aplicação baseada na
+            web para os usuários através da Internet. Podem ser imagens, textos, dados de aplicativos, vídeos, por
+            exemplo. </p>
+
+        Dessa forma, o navegador da web solicita dados do site, o que acontece quando o usuário clica em um determinado
+        link ou clicar para baixar um documento que foi exibido no navegador.</p>
+        </p>
+    </div>
+    ----------------------------------------------------------------------------------------------------------------
+    <p>Captura de tela solicitada mostrando como ficou o funcionamento do projeto de website hospedado no Cisco Packet
+        Tracer. </p>
+    <img class="img2" src="CapturaDeTela.png">
+
+
+</body>
+
+</html>
